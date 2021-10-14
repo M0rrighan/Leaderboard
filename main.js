@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*,\r\n*::before,\r\n*::after {\r\n  box-sizing: border-box;\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*\r\n    ===========================\r\n    ********** Reset **********\r\n    ===========================\r\n*/\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n\r\n  /* outline: 1px solid green; */\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Global *********\r\n    ===========================\r\n*/\r\nbody {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 2rem;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  border: 1px solid grey;\r\n  background-color: white;\r\n  padding: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem grey;\r\n}\r\n\r\ninput,\r\ninput::placeholder {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 0.5rem;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Layout *********\r\n    ===========================\r\n*/\r\n.container {\r\n  width: 95%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.container section {\r\n  padding: 1rem;\r\n}\r\n\r\n.display-score header {\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.refresh-btn {\r\n  display: flex;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.display-score ul {\r\n  border: 1px solid grey;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.display-score ul li {\r\n  padding: 0.5rem;\r\n}\r\n\r\n.display-score ul > li:nth-child(even) {\r\n  background-color: hsl(0 0% 50% / 30%);\r\n}\r\n\r\n.add-score {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n}\r\n\r\n.submit-btn {\r\n  align-self: flex-end;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY min-width 768px *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 768px) {\r\n  .container {\r\n    width: 80%;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container section {\r\n    width: 50%;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -472,6 +472,38 @@ module.exports = function (cssWithMappingToString) {
   return list;
 };
 
+/***/ }),
+/* 11 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "scoreListExample": () => (/* binding */ scoreListExample),
+/* harmony export */   "generateScoreListHtml": () => (/* binding */ generateScoreListHtml)
+/* harmony export */ });
+const scoreListExample = [
+  { name: 'Martina', score: 100 },
+  { name: 'Alex', score: 80 },
+  { name: 'George', score: 90 },
+  { name: 'Lucas', score: 70 },
+  { name: 'Julia', score: 60 },
+];
+
+const generateScoreListHtml = (list, ulContainer) => {
+  let ulInner = '';
+  list.forEach((item) => {
+    const { name, score } = item;
+    ulInner += `
+    <li>
+    <p>${name} : ${score} </p>
+    </li>`;
+  });
+  ulContainer.innerHTML = ulInner;
+};
+
+
+
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -546,7 +578,13 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
+
+
+const listUL = document.querySelector('[data-score-list]');
+
+(0,_utils_js__WEBPACK_IMPORTED_MODULE_1__.generateScoreListHtml)(_utils_js__WEBPACK_IMPORTED_MODULE_1__.scoreListExample, listUL);
 
 })();
 
