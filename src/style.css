@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   /* outline: 1px solid green; */
 }
 
@@ -22,7 +23,7 @@
     ===========================
 */
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25rem;
   padding: 2rem;
 }
@@ -35,9 +36,9 @@ body {
   box-shadow: 0.25rem 0.25rem 0.5rem grey;
 }
 
-input, 
+input,
 input::placeholder {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.25rem;
   padding: 0.5rem;
 }
@@ -74,12 +75,12 @@ input::placeholder {
   margin: 1.725rem 0;
 }
 
-.display-score ul > li:nth-child(even) {
-  background-color: hsl(0 0% 50% / 30%);
-}
-
 .display-score ul li {
   padding: 0.5rem;
+}
+
+.display-score ul > li:nth-child(even) {
+  background-color: hsl(0 0% 50% / 30%);
 }
 
 .add-score {
@@ -107,5 +108,3 @@ input::placeholder {
     width: 50%;
   }
 }
-
-
