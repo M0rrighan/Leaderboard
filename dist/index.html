@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>LeaderBoard</title>
+<script defer src="main.js"></script></head>
+
+<body>
+  <h1>LeaderBoard</h1>
+  <div class="container">
+    <section class="display-score">
+      <header class="display-header">
+        <h2>Recent Scores</h2>
+        <div class="btn refresh-btn">Refresh
+          <i class="material-icons">autorenew</i>
+        </div>
+      </header>
+      <ul data-score-list class="scores-list">
+      </ul>
+    </section>
+
+    <section data-add class="add-score">
+      <h2>Add your score</h2>
+      <input type="text" name="name" id="name" placeholder="Your name">
+      <input type="number" name="score" id="score" placeholder="Your score">
+      <input type="button" value="Submit" class="btn submit-btn">
+
+
+    </section>
+  </div>
+
+</body>
+
+</html>
