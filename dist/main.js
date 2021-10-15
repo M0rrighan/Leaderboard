@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*\r\n    ===========================\r\n    ********** Reset **********\r\n    ===========================\r\n*/\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n\r\n  /* outline: 1px solid green; */\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Global *********\r\n    ===========================\r\n*/\r\nbody {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 2rem;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  border: 1px solid grey;\r\n  background-color: white;\r\n  padding: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem grey;\r\n}\r\n\r\ninput,\r\ninput::placeholder {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 0.5rem;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Layout *********\r\n    ===========================\r\n*/\r\n.container {\r\n  width: 95%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.container section {\r\n  padding: 1rem;\r\n}\r\n\r\n.display-score header {\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.refresh-btn {\r\n  display: flex;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.display-score ul {\r\n  border: 1px solid grey;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.display-score ul li {\r\n  padding: 0.5rem;\r\n}\r\n\r\n.display-score ul > li:nth-child(even) {\r\n  background-color: hsl(0 0% 50% / 30%);\r\n}\r\n\r\n.add-score {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n}\r\n\r\n.submit-btn {\r\n  align-self: flex-end;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY min-width 768px *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 768px) {\r\n  .container {\r\n    width: 80%;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container section {\r\n    width: 50%;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*\r\n    ===========================\r\n    ********** Reset **********\r\n    ===========================\r\n*/\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n\r\n  /* outline: 1px solid green; */\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Global *********\r\n    ===========================\r\n*/\r\nbody {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 2rem;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  border: 1px solid grey;\r\n  background-color: white;\r\n  padding: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem grey;\r\n}\r\n\r\ninput,\r\ninput::placeholder {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 0.5rem;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Layout *********\r\n    ===========================\r\n*/\r\n.container {\r\n  width: 95%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.container section {\r\n  padding: 1rem;\r\n}\r\n\r\n.display-score header {\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.refresh-btn {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.display-score ul {\r\n  border: 1px solid grey;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.display-score ul li {\r\n  padding: 0.5rem;\r\n}\r\n\r\n.display-score ul > li:nth-child(even) {\r\n  background-color: hsl(0 0% 50% / 30%);\r\n}\r\n\r\n.add-score form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.submit-btn {\r\n  align-self: flex-end;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY min-width 768px *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 768px) {\r\n  .container {\r\n    width: 80%;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container section {\r\n    width: 50%;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -478,25 +478,66 @@ module.exports = function (cssWithMappingToString) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "scoreListExample": () => (/* binding */ scoreListExample),
-/* harmony export */   "generateScoreListHtml": () => (/* binding */ generateScoreListHtml)
+/* harmony export */   "readScores": () => (/* binding */ readScores),
+/* harmony export */   "postNewScore": () => (/* binding */ postNewScore)
 /* harmony export */ });
-const scoreListExample = [
-  { name: 'Martina', score: 100 },
-  { name: 'Alex', score: 80 },
-  { name: 'George', score: 90 },
-  { name: 'Lucas', score: 70 },
-  { name: 'Julia', score: 60 },
-];
+const polyBridgeID = 'KfHLA8dnMC4xAGZz0t9I';
+const leaderBoardBaseURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
+const polyBridgeScoresURL = `${leaderBoardBaseURL}games/${polyBridgeID}/scores/`;
+const header = new Headers({ 'Content-type': 'application/json; charset=UTF-8' });
+
+const readScores = async () => {
+  const scores = await fetch(polyBridgeScoresURL, {
+    method: 'GET',
+    headers: header,
+  });
+  return scores.json();
+};
+
+const postNewScore = async (userScore) => {
+  const postResult = await fetch(polyBridgeScoresURL, {
+    method: 'POST',
+    body: JSON.stringify(userScore),
+    headers: header,
+    mode: 'cors',
+  });
+
+  return postResult.json();
+};
+
+// const createNewGame = async () => {
+//   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+//     method: 'POST',
+//     body: JSON.stringify({ name: 'Poly Bridge' }),
+//     headers: header,
+//   });
+//   const newGame = await response.json();
+//   return newGame;
+// };
+
+// console.log(createNewGame().result);
+
+
+
+
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "generateScoreListHtml": () => (/* binding */ generateScoreListHtml),
+/* harmony export */   "getRankedScoreList": () => (/* binding */ getRankedScoreList)
+/* harmony export */ });
+const getRankedScoreList = (list) => list.sort((a, b) => b.score - a.score)
+  .map((userScore, i) => ({ rank: (i + 1), name: userScore.user, score: userScore.score }));
 
 const generateScoreListHtml = (list, ulContainer) => {
   let ulInner = '';
   list.forEach((item) => {
-    const { name, score } = item;
+    const { rank, name, score } = item;
     ulInner += `
-    <li>
-    <p>${name} : ${score} </p>
-    </li>`;
+    <li>${rank}. ${name} : ${score}</li>`;
   });
   ulContainer.innerHTML = ulInner;
 };
@@ -578,13 +619,41 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _leaderboard_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
 
-const listUL = document.querySelector('[data-score-list]');
 
-(0,_utils_js__WEBPACK_IMPORTED_MODULE_1__.generateScoreListHtml)(_utils_js__WEBPACK_IMPORTED_MODULE_1__.scoreListExample, listUL);
+const ulContainer = document.querySelector('[data-score-list]');
+const refresh = document.querySelector('[data-refresh]');
+const form = document.querySelector('[data-form-add]');
+const nameInputField = document.getElementById('name');
+const scoreInputField = document.getElementById('score');
+
+const showUpdatedScores = async () => {
+  const scoresFromApi = await (0,_leaderboard_api_js__WEBPACK_IMPORTED_MODULE_1__.readScores)();
+  const list = (0,_utils_js__WEBPACK_IMPORTED_MODULE_2__.getRankedScoreList)(scoresFromApi.result);
+  (0,_utils_js__WEBPACK_IMPORTED_MODULE_2__.generateScoreListHtml)(list, ulContainer);
+};
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const user = nameInputField.value;
+  const score = scoreInputField.value;
+  await (0,_leaderboard_api_js__WEBPACK_IMPORTED_MODULE_1__.postNewScore)({ user, score });
+  nameInputField.value = '';
+  scoreInputField.value = '';
+  await showUpdatedScores();
+});
+
+refresh.addEventListener('click', async () => {
+  await showUpdatedScores();
+});
+
+window.onload = async () => {
+  await showUpdatedScores();
+};
 
 })();
 
