@@ -22,16 +22,4 @@ const postNewScore = async (userScore) => {
   return postResult.json();
 };
 
-// const createNewGame = async () => {
-//   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
-//     method: 'POST',
-//     body: JSON.stringify({ name: 'Poly Bridge' }),
-//     headers: header,
-//   });
-//   const newGame = await response.json();
-//   return newGame;
-// };
-
-// console.log(createNewGame().result);
-
 export { readScores, postNewScore };
