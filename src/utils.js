@@ -1,21 +1,14 @@
-const scoreListExample = [
-  { name: 'Martina', score: 100 },
-  { name: 'Alex', score: 80 },
-  { name: 'George', score: 90 },
-  { name: 'Lucas', score: 70 },
-  { name: 'Julia', score: 60 },
-];
+const getRankedScoreList = (list) => list.sort((a, b) => b.score - a.score)
+  .map((userScore, i) => ({ rank: (i + 1), name: userScore.user, score: userScore.score }));
 
 const generateScoreListHtml = (list, ulContainer) => {
   let ulInner = '';
   list.forEach((item) => {
-    const { name, score } = item;
+    const { rank, name, score } = item;
     ulInner += `
-    <li>
-    <p>${name} : ${score} </p>
-    </li>`;
+    <li>${rank}. ${name} : ${score}</li>`;
   });
   ulContainer.innerHTML = ulInner;
 };
 
-export { scoreListExample, generateScoreListHtml };
+export { generateScoreListHtml, getRankedScoreList };
