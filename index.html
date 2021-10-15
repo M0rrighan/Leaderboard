@@ -15,7 +15,7 @@
     <section class="display-score">
       <header class="display-header">
         <h2>Recent Scores</h2>
-        <div class="btn refresh-btn">Refresh
+        <div data-refresh class="btn refresh-btn">Refresh
           <i class="material-icons">autorenew</i>
         </div>
       </header>
@@ -23,11 +23,13 @@
       </ul>
     </section>
 
-    <section data-add class="add-score">
+    <section class="add-score">
       <h2>Add your score</h2>
-      <input type="text" name="name" id="name" placeholder="Your name">
-      <input type="number" name="score" id="score" placeholder="Your score">
-      <input type="button" value="Submit" class="btn submit-btn">
+      <form data-form-add>
+        <input type="text" name="name" id="name" placeholder="Your name" minlength="1">
+        <input type="number" name="score" id="score" placeholder="Your score" min="1" max="100">
+        <input type="submit" value="Submit" class="btn submit-btn">
+      </form>
 
 
     </section>
