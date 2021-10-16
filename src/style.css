@@ -21,7 +21,7 @@
     ===========================
 */
 :root {
-  --dark:hsl(26, 32%, 29%);
+  --dark: hsl(26, 32%, 29%);
   --light: hsl(39, 42%, 88%);
 }
 
@@ -34,7 +34,7 @@ body {
   font-size: 1.25rem;
   word-break: break-word;
   word-wrap: break-word;
-  padding: 2rem;  
+  padding: 2rem;
   color: var(--dark);
   text-shadow: 0.15rem 0.15rem 0.5rem var(--light);
   background-image: url('./img/Portrait.png');
@@ -46,8 +46,8 @@ body {
 }
 
 @keyframes bg-move {
-  10% {background-position: top right;}
-  100% {background-position: center;}
+  10% { background-position: top right; }
+  100% { background-position: center; }
 }
 
 .btn {
@@ -139,7 +139,7 @@ h1::after {
 }
 
 @keyframes scaling {
-  100% {transform: scale(1);}
+  100% { transform: scale(1); }
 }
 
 .display-score ul li {
