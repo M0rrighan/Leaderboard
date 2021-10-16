@@ -345,12 +345,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(12), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(13), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/*\r\n    ===========================\r\n    ********** Reset **********\r\n    ===========================\r\n*/\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n\r\n  /* outline: 1px solid green; */\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Global *********\r\n    ===========================\r\n*/\r\nbody {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 2rem;\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  border: 1px solid grey;\r\n  background-color: white;\r\n  padding: 0.5rem;\r\n  box-shadow: 0.25rem 0.25rem 0.5rem grey;\r\n}\r\n\r\ninput,\r\ninput::placeholder {\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n  font-size: 1.25rem;\r\n  padding: 0.5rem;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Layout *********\r\n    ===========================\r\n*/\r\n.container {\r\n  width: 95%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.container section {\r\n  padding: 1rem;\r\n}\r\n\r\n.display-score header {\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.refresh-btn {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.display-score ul {\r\n  border: 1px solid grey;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.display-score ul li {\r\n  padding: 0.5rem;\r\n}\r\n\r\n.display-score ul > li:nth-child(even) {\r\n  background-color: hsl(0 0% 50% / 30%);\r\n}\r\n\r\n.add-score form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.submit-btn {\r\n  align-self: flex-end;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY min-width 768px *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 768px) {\r\n  .container {\r\n    width: 80%;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container section {\r\n    width: 50%;\r\n  }\r\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/*\r\n    ===========================\r\n    ********** Reset **********\r\n    ===========================\r\n*/\r\n*,\r\n*::before,\r\n*::after {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\n* ul li {\r\n  list-style-type: none;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Global *********\r\n    ===========================\r\n*/\r\n:root {\r\n  --dark:hsl(26, 32%, 29%);\r\n  --light: hsl(39, 42%, 88%);\r\n}\r\n\r\nhtml {\r\n  background-color: #50b2d9;\r\n}\r\n\r\nbody {\r\n  font-family: cursive;\r\n  font-size: 1.25rem;\r\n  word-break: break-word;\r\n  word-wrap: break-word;\r\n  padding: 2rem;  \r\n  color: var(--dark);\r\n  text-shadow: 0.15rem 0.15rem 0.5rem var(--light);\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-position: top right;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  animation: bg-move 2s;\r\n  animation-fill-mode: forwards;\r\n}\r\n\r\n@keyframes bg-move {\r\n  10% {background-position: top right;}\r\n  100% {background-position: center;}\r\n}\r\n\r\n.btn {\r\n  cursor: pointer;\r\n  padding: 0.5rem;\r\n  font-weight: bold;\r\n  letter-spacing: 0.1rem;\r\n  text-shadow: 0.15rem 0.15rem 0.5rem var(--light);\r\n  background-color: var(--light);\r\n  box-shadow: 0.25rem 0.25rem 0.5rem var(--dark);\r\n  border-radius: 0.25rem;\r\n  transition: all 600ms ease-in-out;\r\n}\r\n\r\n.btn:hover {\r\n  color: var(--light);\r\n  background-color: var(--dark);\r\n  transition: all 600ms ease-in-out;\r\n}\r\n\r\ninput,\r\ninput::placeholder {\r\n  font-family: cursive;\r\n  font-size: 1.25rem;\r\n  color: var(--dark);\r\n  background-color: var(--light);\r\n  padding: 0.5rem;\r\n  outline: none;\r\n  border: none;\r\n  border-radius: 0.25rem;\r\n}\r\n\r\n/*\r\n    ===========================\r\n    ********* Layout *********\r\n    ===========================\r\n*/\r\nh1 {\r\n  position: relative;\r\n  margin-top: 3rem;\r\n}\r\n\r\nh1::after {\r\n  content: '';\r\n  position: absolute;\r\n  height: 100%;\r\n  width: 100%;\r\n  top: -100%;\r\n  right: 0;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");\r\n  background-position-x: right;\r\n  background-repeat: no-repeat;\r\n  background-size: contain;\r\n}\r\n\r\n.container {\r\n  width: 95%;\r\n  display: flex;\r\n  flex-direction: column-reverse;\r\n  gap: 2rem;\r\n  margin: 2rem auto;\r\n}\r\n\r\n.container section {\r\n  padding: 1rem;\r\n}\r\n\r\n.display-score header {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  gap: 1rem;\r\n}\r\n\r\n.refresh-btn {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.25rem;\r\n}\r\n\r\n.display-score ul {\r\n  margin: 1.725rem 0;\r\n  background-color: hsla(38, 41%, 88%, 0.85);\r\n  box-shadow: 0.25rem 0.25rem 0.5rem var(--dark);\r\n  border-radius: 0.25rem;\r\n  transform: scale(0);\r\n  animation: scaling 1s ease-in-out 1s forwards;\r\n}\r\n\r\n@keyframes scaling {\r\n  100% {transform: scale(1);}\r\n}\r\n\r\n.display-score ul li {\r\n  padding: 0.5rem;\r\n}\r\n\r\n.display-score ul > li:nth-child(even) {\r\n  background-color: hsla(26, 32%, 29%, 0.25);\r\n}\r\n\r\n.add-score form {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 2rem;\r\n  margin: 1.725rem 0;\r\n}\r\n\r\n.submit-btn {\r\n  align-self: flex-end;\r\n}\r\n\r\n/*\r\n    ============================================\r\n    ******* MEDIA QUERY min-width 768px *******\r\n    ============================================\r\n*/\r\n@media only screen and (min-width: 768px) {\r\n  .container {\r\n    width: 80%;\r\n    flex-direction: row;\r\n  }\r\n\r\n  .container section {\r\n    width: 50%;\r\n  }\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -474,6 +481,52 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 /* 11 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+/* 12 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "d2d92f987eb1d7b9965c.png";
+
+/***/ }),
+/* 13 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "924fc7d4f007f0a4aacb.png";
+
+/***/ }),
+/* 14 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -505,23 +558,11 @@ const postNewScore = async (userScore) => {
   return postResult.json();
 };
 
-// const createNewGame = async () => {
-//   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
-//     method: 'POST',
-//     body: JSON.stringify({ name: 'Poly Bridge' }),
-//     headers: header,
-//   });
-//   const newGame = await response.json();
-//   return newGame;
-// };
-
-// console.log(createNewGame().result);
-
 
 
 
 /***/ }),
-/* 12 */
+/* 15 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -572,6 +613,9 @@ const generateScoreListHtml = (list, ulContainer) => {
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -597,6 +641,18 @@ const generateScoreListHtml = (list, ulContainer) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -613,14 +669,60 @@ const generateScoreListHtml = (list, ulContainer) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			0: 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _leaderboard_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _leaderboard_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
 
 
 
