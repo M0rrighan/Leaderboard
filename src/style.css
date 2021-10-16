@@ -9,8 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* outline: 1px solid green; */
 }
 
 * ul li {
@@ -22,25 +20,64 @@
     ********* Global *********
     ===========================
 */
+:root {
+  --dark: hsl(26, 32%, 29%);
+  --light: hsl(39, 42%, 88%);
+}
+
+html {
+  background-color: #50b2d9;
+}
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
   font-size: 1.25rem;
+  word-break: break-word;
+  word-wrap: break-word;
   padding: 2rem;
+  color: var(--dark);
+  text-shadow: 0.15rem 0.15rem 0.5rem var(--light);
+  background-image: url('./img/Portrait.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: bg-move 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bg-move {
+  10% { background-position: top right; }
+  100% { background-position: center; }
 }
 
 .btn {
   cursor: pointer;
-  border: 1px solid grey;
-  background-color: white;
   padding: 0.5rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem grey;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-shadow: 0.15rem 0.15rem 0.5rem var(--light);
+  background-color: var(--light);
+  box-shadow: 0.25rem 0.25rem 0.5rem var(--dark);
+  border-radius: 0.25rem;
+  transition: all 600ms ease-in-out;
+}
+
+.btn:hover {
+  color: var(--light);
+  background-color: var(--dark);
+  transition: all 600ms ease-in-out;
 }
 
 input,
 input::placeholder {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: cursive;
   font-size: 1.25rem;
+  color: var(--dark);
+  background-color: var(--light);
   padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
 }
 
 /*
@@ -48,6 +85,24 @@ input::placeholder {
     ********* Layout *********
     ===========================
 */
+h1 {
+  position: relative;
+  margin-top: 3rem;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -100%;
+  right: 0;
+  background-image: url('./img/PolyBridge.png');
+  background-position-x: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .container {
   width: 95%;
   display: flex;
@@ -62,7 +117,10 @@ input::placeholder {
 
 .display-score header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .refresh-btn {
@@ -72,8 +130,16 @@ input::placeholder {
 }
 
 .display-score ul {
-  border: 1px solid grey;
   margin: 1.725rem 0;
+  background-color: hsla(38, 41%, 88%, 0.85);
+  box-shadow: 0.25rem 0.25rem 0.5rem var(--dark);
+  border-radius: 0.25rem;
+  transform: scale(0);
+  animation: scaling 1s ease-in-out 1s forwards;
+}
+
+@keyframes scaling {
+  100% { transform: scale(1); }
 }
 
 .display-score ul li {
@@ -81,7 +147,7 @@ input::placeholder {
 }
 
 .display-score ul > li:nth-child(even) {
-  background-color: hsl(0 0% 50% / 30%);
+  background-color: hsla(26, 32%, 29%, 0.25);
 }
 
 .add-score form {
