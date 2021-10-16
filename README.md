@@ -5,6 +5,11 @@ The leaderboard website displays scores submitted by different players. It also 
 
 [Live Demo Link](https://m0rrighan.github.io/Leaderboard/)
 
+## Screenshots
+### Desktop
+![screenshot](./src/img/desktop.gif)
+### Mobile
+![screenshot](./src/img/mobile.gif)
 ## Built With
 
 - HTML
